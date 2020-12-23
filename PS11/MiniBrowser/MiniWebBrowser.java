@@ -9,7 +9,7 @@ public class MiniWebBrowser extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("MiniWebBrowser.fxml"));
-        stage.setTitle("Google Chrome 2.0");
+        stage.setTitle("Ismat Browser");
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
