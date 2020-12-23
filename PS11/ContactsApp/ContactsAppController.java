@@ -54,25 +54,10 @@ public class ContactsAppController {
 
 
 
-//            for (Contact i : contacts){
-//                if ((i.getFirstName().equals(newOne.getFirstName()) && i.getLastName().equals(newOne.getLastName()))) {
-//                    contacts.remove(i);
-//                }
-//            }
             contacts.removeIf(i -> i.getFirstName().equals(newOne.getFirstName()) && i.getLastName().equals(newOne.getLastName()));
 
             contacts.add(newOne);
 
-//            if (contacts.contains(newOne)){
-//                Contact temp = new Contact();
-//                temp.setFirstName(fNameTextField.getText());
-//                temp.setLastName(lNameTextField.getText());
-//                temp.setPhoneNumber(phoneTextField.getText());
-//                temp.setEmail(emailTextField.getText());
-//                contacts.set(contacts.indexOf(newOne), temp);
-//            }else {
-//                contacts.add(newOne);
-//            }
 
             //contacts.set(contacts.indexOf(newOne), newOne);
             contactListView.setItems(contacts);
@@ -117,7 +102,7 @@ public class ContactsAppController {
     // initialize controller
     public void initialize() {
         // populate the ObservableList<Book>
-        Contact one = new Contact("Ozar", "Aini", "+99293555555", "ozar007@gmail.com","Male");
+        Contact one = new Contact("Ismat", "Rahmonob", "+992111010115", "ismat@gmail.com","Male");
         contacts.add(one);
 
         contactListView.setItems(contacts); // bind booksListView to books
